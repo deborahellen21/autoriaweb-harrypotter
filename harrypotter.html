@@ -1,102 +1,210 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Hogwarts - Painel do Aluno</title>
-
+    <title>Hogwarts | Painel do Aluno</title>
     <link rel="stylesheet" href="harrypotter.css">
 </head>
 
 <body>
 
-    <header>
-        <h1>⚡ Hogwarts</h1>
-        <p>Painel do Aluno</p>
-    </header>
+    <!-- MENU -->
+    <aside class="menu">
 
-    <nav>
-        <a href="#inicio">🏰 Início</a>
-        <a href="#aulas">📚 Aulas</a>
-        <a href="#inventario">🎒 Inventário</a>
-        <a href="#feiticos">✨ Feitiços</a>
-        <a href="#casas">🏠 Casas</a>
-        <a href="#diario">📖 Diário</a>
-    </nav>
+        <div class="marca">
+            <div class="raio">⚡</div>
+            <div>
+                <h1>HOGWARTS</h1>
+                <span>PAINEL DO ALUNO</span>
+            </div>
+        </div>
+
+        <div class="linha"></div>
+
+        <nav>
+            <a href="#inicio" class="ativo">
+                <span>🏠</span> Início
+            </a>
+
+            <a href="#aulas">
+                <span>📚</span> Aulas
+            </a>
+
+            <a href="#inventario">
+                <span>🎒</span> Inventário
+            </a>
+
+            <a href="#feiticos">
+                <span>✨</span> Feitiços
+            </a>
+
+            <a href="#casas">
+                <span>🏰</span> Casas
+            </a>
+
+            <a href="#diario">
+                <span>📖</span> Diário
+            </a>
+        </nav>
+
+        <div class="perfil-menu">
+            <div class="avatar">⚡</div>
+            <div>
+                <strong>Jovem Bruxo</strong>
+                <small>5º ano</small>
+            </div>
+        </div>
+
+    </aside>
 
 
+    <!-- CONTEÚDO -->
     <main>
 
         <!-- INÍCIO -->
+        <section id="inicio" class="hero">
 
-        <section id="inicio" class="inicio">
+            <div class="estrelas">✨·✨·✨·✨</div>
 
-            <h2>🏰 Bem-vindo a Hogwarts!</h2>
+            <div class="hero-texto">
+                <span class="mini-titulo">✨ BEM-VINDO A HOGWARTS</span>
 
-            <p>
-                Bem-vindo ao seu painel de aluno.
-                Aqui você pode acompanhar suas aulas,
-                seus itens, feitiços e sua casa.
-            </p>
+                <h2>
+                    Seu próximo capítulo
+                    <strong>começa aqui.</strong>
+                </h2>
 
-            <div class="aviso">
-                ✨ A magia começa quando você acredita!
+                <p>
+                    Entre no castelo, descubra sua magia e prepare-se
+                    para mais um ano cheio de aventuras.
+                </p>
+
+                <div class="botoes">
+                    <a href="#aulas" class="botao-principal">
+                        Entrar no castelo →
+                    </a>
+
+                    <a href="#casas" class="botao-secundario">
+                        Escolher casa
+                    </a>
+                </div>
+            </div>
+
+            <div class="selo">
+                <span>✨</span>
+                <strong>H</strong>
+                <small>HOGWARTS</small>
+            </div>
+
+        </section>
+
+
+        <!-- STATUS -->
+        <section class="status">
+
+            <div class="status-card">
+                <span>✨</span>
+                <div>
+                    <small>ANO LETIVO</small>
+                    <strong>5º Ano</strong>
+                </div>
+            </div>
+
+            <div class="status-card">
+                <span>📚</span>
+                <div>
+                    <small>AULAS HOJE</small>
+                    <strong>06 aulas</strong>
+                </div>
+            </div>
+
+            <div class="status-card">
+                <span>⚡</span>
+                <div>
+                    <small>FEITIÇOS</small>
+                    <strong>12 aprendidos</strong>
+                </div>
+            </div>
+
+            <div class="status-card">
+                <span>🔮</span>
+                <div>
+                    <small>MISSÕES</small>
+                    <strong>03 ativas</strong>
+                </div>
             </div>
 
         </section>
 
 
         <!-- AULAS -->
-
         <section id="aulas">
 
-            <h2>📚 Aulas</h2>
-
-            <div class="cards">
-
-                <div class="card">
-                    ✨
-                    <h3>Feitiços</h3>
-                    <p>Aprenda novos encantamentos.</p>
-                    <span>08:00</span>
+            <div class="titulo-secao">
+                <div>
+                    <span>HORÁRIO ACADÊMICO</span>
+                    <h2>Suas aulas</h2>
                 </div>
 
-                <div class="card">
-                    🧪
+                <div class="numero">01</div>
+            </div>
+
+            <div class="grade-aulas">
+
+                <article class="aula destaque">
+                    <div class="numero-aula">01</div>
+                    <span class="icone-aula">🧪</span>
+                    <small>08:00 — 09:30</small>
                     <h3>Poções</h3>
-                    <p>Prepare diferentes poções mágicas.</p>
-                    <span>09:00</span>
-                </div>
+                    <p>Prepare misturas mágicas e descubra novos ingredientes.</p>
+                    <span class="local">▸ Sala de Poções</span>
+                </article>
 
-                <div class="card">
-                    🌿
+                <article class="aula">
+                    <div class="numero-aula">02</div>
+                    <span class="icone-aula">✨</span>
+                    <small>10:00 — 11:30</small>
+                    <h3>Feitiços</h3>
+                    <p>Pratique encantamentos e aperfeiçoe sua magia.</p>
+                    <span class="local">▸ Torre de Feitiços</span>
+                </article>
+
+                <article class="aula">
+                    <div class="numero-aula">03</div>
+                    <span class="icone-aula">🌿</span>
+                    <small>13:00 — 14:30</small>
                     <h3>Herbologia</h3>
-                    <p>Estude plantas e ingredientes mágicos.</p>
-                    <span>10:00</span>
-                </div>
+                    <p>Conheça plantas mágicas e seus poderes.</p>
+                    <span class="local">▸ Estufas</span>
+                </article>
 
-                <div class="card">
-                    🐉
-                    <h3>Trato das Criaturas</h3>
-                    <p>Conheça criaturas do mundo mágico.</p>
-                    <span>11:00</span>
-                </div>
+                <article class="aula">
+                    <div class="numero-aula">04</div>
+                    <span class="icone-aula">🔮</span>
+                    <small>14:30 — 16:00</small>
+                    <h3>Adivinhação</h3>
+                    <p>Aprenda a interpretar os sinais do mundo mágico.</p>
+                    <span class="local">▸ Torre Norte</span>
+                </article>
 
-                <div class="card">
-                    🛡️
-                    <h3>Defesa Contra as Artes das Trevas</h3>
-                    <p>Aprenda formas de proteção.</p>
-                    <span>13:00</span>
-                </div>
+                <article class="aula">
+                    <div class="numero-aula">05</div>
+                    <span class="icone-aula">🐉</span>
+                    <small>16:00 — 17:30</small>
+                    <h3>Criaturas Mágicas</h3>
+                    <p>Descubra criaturas fascinantes e seus habitats.</p>
+                    <span class="local">▸ Floresta</span>
+                </article>
 
-                <div class="card">
-                    🔭
-                    <h3>Astronomia</h3>
-                    <p>Observe as estrelas e os planetas.</p>
-                    <span>15:00</span>
-                </div>
+                <article class="aula">
+                    <div class="numero-aula">06</div>
+                    <span class="icone-aula">📖</span>
+                    <small>18:00 — 19:30</small>
+                    <h3>História da Magia</h3>
+                    <p>Reviva os acontecimentos que marcaram o mundo bruxo.</p>
+                    <span class="local">▸ Biblioteca</span>
+                </article>
 
             </div>
 
@@ -104,61 +212,71 @@
 
 
         <!-- INVENTÁRIO -->
-
         <section id="inventario">
 
-            <h2>🎒 Inventário</h2>
-
-            <p>Itens mágicos do aluno</p>
-
-            <div class="cards">
-
-                <div class="card">
-                    🧹
-                    <h3>Vassoura</h3>
-                    <p>Usada nas aulas de voo.</p>
+            <div class="titulo-secao">
+                <div>
+                    <span>SEUS OBJETOS</span>
+                    <h2>Inventário mágico</h2>
                 </div>
 
-                <div class="card">
-                    🧪
-                    <h3>Poção</h3>
-                    <p>Uma poção preparada em Hogwarts.</p>
+                <div class="numero">02</div>
+            </div>
+
+            <div class="inventario">
+
+                <div class="item">
+                    <span>🧹</span>
+                    <div>
+                        <h3>Nimbus</h3>
+                        <p>Vassoura de voo</p>
+                    </div>
+                    <b>01</b>
                 </div>
 
-                <div class="card">
-                    📖
-                    <h3>Livro de Feitiços</h3>
-                    <p>Contém vários encantamentos.</p>
+                <div class="item">
+                    <span>📖</span>
+                    <div>
+                        <h3>Livro de Feitiços</h3>
+                        <p>Conhecimento mágico</p>
+                    </div>
+                    <b>01</b>
                 </div>
 
-                <div class="card">
-                    🗺️
-                    <h3>Mapa do Maroto</h3>
-                    <p>Mostra os corredores do castelo.</p>
+                <div class="item">
+                    <span>🗺️</span>
+                    <div>
+                        <h3>Mapa do Maroto</h3>
+                        <p>Mapa encantado</p>
+                    </div>
+                    <b>01</b>
                 </div>
 
-                <div class="card">
-                    🎩
-                    <h3>Chapéu Seletor</h3>
-                    <p>Escolhe a casa do aluno.</p>
+                <div class="item">
+                    <span>🦉</span>
+                    <div>
+                        <h3>Coruja</h3>
+                        <p>Mensageira oficial</p>
+                    </div>
+                    <b>01</b>
                 </div>
 
-                <div class="card">
-                    🦉
-                    <h3>Coruja</h3>
-                    <p>Entrega cartas e mensagens.</p>
+                <div class="item">
+                    <span>🎩</span>
+                    <div>
+                        <h3>Chapéu Seletor</h3>
+                        <p>Objeto encantado</p>
+                    </div>
+                    <b>01</b>
                 </div>
 
-                <div class="card">
-                    🧥
-                    <h3>Capa da Invisibilidade</h3>
-                    <p>Uma capa mágica especial.</p>
-                </div>
-
-                <div class="card">
-                    🍫
-                    <h3>Sapo de Chocolate</h3>
-                    <p>Um doce famoso do mundo bruxo.</p>
+                <div class="item">
+                    <span>🍫</span>
+                    <div>
+                        <h3>Sapo de Chocolate</h3>
+                        <p>Doce mágico</p>
+                    </div>
+                    <b>03</b>
                 </div>
 
             </div>
@@ -167,47 +285,59 @@
 
 
         <!-- FEITIÇOS -->
-
         <section id="feiticos">
 
-            <h2>✨ Feitiços</h2>
+            <div class="titulo-secao">
+                <div>
+                    <span>GRIMÓRIO</span>
+                    <h2>Feitiços aprendidos</h2>
+                </div>
 
-            <div class="cards">
+                <div class="numero">03</div>
+            </div>
 
-                <div class="card">
-                    💡
+            <div class="feiticos">
+
+                <div class="feitico">
+                    <span>💡</span>
                     <h3>Lumos</h3>
-                    <p>Cria uma pequena luz.</p>
+                    <p>Cria uma pequena fonte de luz.</p>
+                    <small>ENCANTAMENTO</small>
                 </div>
 
-                <div class="card">
-                    🔓
+                <div class="feitico">
+                    <span>🔑</span>
                     <h3>Alohomora</h3>
-                    <p>Usado para abrir fechaduras.</p>
+                    <p>Destranca portas e fechaduras.</p>
+                    <small>ENCANTAMENTO</small>
                 </div>
 
-                <div class="card">
-                    🛡️
+                <div class="feitico">
+                    <span>🛡️</span>
                     <h3>Protego</h3>
-                    <p>Cria um escudo de proteção.</p>
+                    <p>Cria uma barreira protetora.</p>
+                    <small>DEFESA</small>
                 </div>
 
-                <div class="card">
-                    🔮
+                <div class="feitico">
+                    <span>✨</span>
                     <h3>Wingardium Leviosa</h3>
                     <p>Faz objetos levitarem.</p>
+                    <small>ENCANTAMENTO</small>
                 </div>
 
-                <div class="card">
-                    ✨
+                <div class="feitico">
+                    <span>🦌</span>
                     <h3>Expecto Patronum</h3>
-                    <p>Invoca um Patrono.</p>
+                    <p>Invoca um Patrono protetor.</p>
+                    <small>PROTEÇÃO</small>
                 </div>
 
-                <div class="card">
-                    ⚡
+                <div class="feitico">
+                    <span>⚡</span>
                     <h3>Expelliarmus</h3>
                     <p>Desarma o adversário.</p>
+                    <small>DEFESA</small>
                 </div>
 
             </div>
@@ -216,43 +346,49 @@
 
 
         <!-- CASAS -->
-
         <section id="casas">
 
-            <h2>🏠 Qual casa você se representa?</h2>
+            <div class="titulo-secao">
+                <div>
+                    <span>CHAPÉU SELETOR</span>
+                    <h2>Onde pertence sua magia?</h2>
+                </div>
+
+                <div class="numero">04</div>
+            </div>
 
             <p class="subtitulo">
-                Escolha a casa que mais combina com você!
+                Escolha a casa que melhor representa você.
             </p>
 
             <div class="casas">
 
-                <label class="casa">
+                <label class="casa grifinoria">
                     <input type="radio" name="casa">
-                    <div class="emoji">🦁</div>
-                    <h3>Grifinória</h3>
-                    <p>Coragem, determinação e bravura.</p>
+                    <span class="simbolo-casa">🦁</span>
+                    <strong>GRIFINÓRIA</strong>
+                    <small>Coragem • Bravura • Determinação</small>
                 </label>
 
-                <label class="casa">
+                <label class="casa sonserina">
                     <input type="radio" name="casa">
-                    <div class="emoji">🐍</div>
-                    <h3>Sonserina</h3>
-                    <p>Ambição, inteligência e determinação.</p>
+                    <span class="simbolo-casa">🐍</span>
+                    <strong>SONSERINA</strong>
+                    <small>Ambição • Astúcia • Liderança</small>
                 </label>
 
-                <label class="casa">
+                <label class="casa corvinal">
                     <input type="radio" name="casa">
-                    <div class="emoji">🦅</div>
-                    <h3>Corvinal</h3>
-                    <p>Inteligência, criatividade e curiosidade.</p>
+                    <span class="simbolo-casa">🦅</span>
+                    <strong>CORVINAL</strong>
+                    <small>Sabedoria • Criatividade • Inteligência</small>
                 </label>
 
-                <label class="casa">
+                <label class="casa lufalufa">
                     <input type="radio" name="casa">
-                    <div class="emoji">🦡</div>
-                    <h3>Lufa-Lufa</h3>
-                    <p>Lealdade, amizade e dedicação.</p>
+                    <span class="simbolo-casa">🦡</span>
+                    <strong>LUFA-LUFA</strong>
+                    <small>Lealdade • Justiça • Dedicação</small>
                 </label>
 
             </div>
@@ -261,40 +397,68 @@
 
 
         <!-- DIÁRIO -->
-
         <section id="diario">
 
-            <h2>📖 Diário</h2>
+            <div class="titulo-secao">
+                <div>
+                    <span>MEMÓRIAS</span>
+                    <h2>Diário do bruxo</h2>
+                </div>
+
+                <div class="numero">05</div>
+            </div>
 
             <div class="diario">
 
-                <div>
-                    📅 <strong>Hoje em Hogwarts</strong>
-                    <p>
-                        Tive aula de Poções e aprendi uma nova receita.
-                    </p>
-                </div>
+                <article class="entrada">
+                    <span>01</span>
+                    <div>
+                        <small>HOJE</small>
+                        <h3>O primeiro dia no castelo</h3>
+                        <p>
+                            Hoje conheci Hogwarts e descobri que estudar magia
+                            é muito mais incrível do que eu imaginava.
+                        </p>
+                    </div>
+                </article>
 
-                <div>
-                    ✨ <strong>Aula de Feitiços</strong>
-                    <p>
-                        Hoje pratiquei alguns encantamentos.
-                    </p>
-                </div>
+                <article class="entrada">
+                    <span>02</span>
+                    <div>
+                        <small>ONTEM</small>
+                        <h3>Minha primeira aula</h3>
+                        <p>
+                            Aprendi novos feitiços e comecei a descobrir
+                            minhas habilidades mágicas.
+                        </p>
+                    </div>
+                </article>
 
-                <div>
-                    🏰 <strong>Conhecendo Hogwarts</strong>
-                    <p>
-                        Explorei novos lugares dentro do castelo.
-                    </p>
-                </div>
+                <article class="entrada">
+                    <span>03</span>
+                    <div>
+                        <small>SEGUNDA-FEIRA</small>
+                        <h3>Explorando Hogwarts</h3>
+                        <p>
+                            Encontrei corredores secretos e lugares
+                            que nunca tinha visto antes.
+                        </p>
+                    </div>
+                </article>
 
             </div>
 
         </section>
 
+
+        <!-- RODAPÉ -->
+        <footer>
+            <div class="linha-footer"></div>
+            <p>✨ HOGWARTS SCHOOL OF WITCHCRAFT AND WIZARDRY ✨</p>
+            <span>“A magia começa quando você acredita nela.”</span>
+        </footer>
+
     </main>
 
 </body>
-
 </html>
