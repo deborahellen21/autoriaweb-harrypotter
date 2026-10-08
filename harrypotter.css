@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Georgia, serif;
+    background: #050b16;
+    color: #e8edf5;
+}
+
+/* MENU */
+header {
+    background: #020812;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #9b7b20;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo span {
+    color: #d4af37;
+    font-size: 30px;
+}
+
+.logo h1 {
+    color: #fff;
+}
+
+.logo p {
+    color: #8d9aae;
+}
+
+nav {
+    display: flex;
+    gap: 8px;
+}
+
+nav a {
+    color: #cbd4e2;
+    text-decoration: none;
+    padding: 10px 14px;
+    border-radius: 6px;
+    transition: .3s;
+}
+
+nav a:hover {
+    background: #182d4a;
+    color: #d4af37;
+}
+
+/* INÍCIO */
+.inicio {
+    width: 86%;
+    margin: 45px auto;
+    padding: 50px;
+    min-height: 330px;
+
+    background: #0a1b32;
+    border: 1px solid #1e3a5f;
+    border-left: 7px solid #d4af37;
+    border-radius: 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    box-shadow: 0 15px 35px #00000080;
+    transition: .3s;
+}
+
+.inicio:hover {
+    border-color: #d4af37;
+    transform: translateY(-4px);
+}
+
+.texto-inicio {
+    max-width: 650px;
+}
+
+.tag {
+    color: #d4af37;
+    font-size: 13px;
+}
+
+.texto-inicio h2 {
+    color: #f1f4f8;
+    font-size: 40px;
+    margin: 18px 0;
+}
+
+.texto-inicio strong {
+    color: #d4af37;
+}
+
+.texto-inicio p {
+    color: #aebdce;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.botao {
+    background: #b8942e;
+    color: #07111f;
+    padding: 12px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.botao:hover {
+    background: #d4af37;
+    transform: translateY(-3px);
+}
+
+.simbolo {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 2px solid #d4af37;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #071426;
+    color: #d4af37;
+    font-size: 65px;
+
+    transition: .3s;
+}
+
+.simbolo:hover {
+    transform: scale(1.08) rotate(5deg);
+}
+
+/* SEÇÕES */
+section:not(.inicio) {
+    width: 86%;
+    margin: 65px auto;
+}
+
+section h2 {
+    color: #e6ebf2;
+    border-left: 5px solid #d4af37;
+    padding-left: 12px;
+    margin-bottom: 25px;
+}
+
+/* CARDS */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.card {
+    background: #0b1829;
+    border: 1px solid #1c3553;
+    padding: 24px;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.card:hover {
+    background: #10243d;
+    border-color: #d4af37;
+    transform: translateY(-6px);
+}
+
+.card h3 {
+    color: #d4af37;
+    margin: 12px 0;
+}
+
+.card p {
+    color: #9eacbd;
+    line-height: 1.5;
+}
+
+.icone {
+    color: #d4af37;
+    font-size: 30px;
+}
+
+/* CASAS */
+.casas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.casa {
+    background: #0b1829;
+    border: 1px solid #1c3553;
+    color: #dce4ee;
+    padding: 22px;
+    text-align: center;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.casa:hover {
+    background: #162d4a;
+    border-color: #d4af37;
+    transform: translateY(-5px);
+}
+
+/* DIÁRIO */
+.entrada {
+    background: #0b1829;
+    border-left: 5px solid #1c3553;
+    padding: 22px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    transition: .3s;
+}
+
+.entrada:hover {
+    background: #10243d;
+    border-left-color: #d4af37;
+    transform: translateX(7px);
+}
+
+.entrada h3 {
+    color: #d4af37;
+    margin-bottom: 8px;
+}
+
+.entrada p {
+    color: #9eacbd;
+}
+
+/* CELULAR */
+@media (max-width: 800px) {
+    header {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .inicio {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+        padding: 40px 25px;
+    }
+
+    .cards,
+    .casas {
+        grid-template-columns: 1fr;
+    }
+}
